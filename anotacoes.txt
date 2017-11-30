@@ -1,0 +1,31 @@
+Saas mais utilizada que LESS e Stylus;
+
+Saas compilador de CSS;
+
+sintaxes diferentes:
+
+.sass = folha de estilo identada,  (exemplo de Python)
+
+.scss (nova) - Mais parecida com o CSS convencional.
+
+
+- MODOS DE COMPILAÇÃO
+WebEssentials(vs2015), Web Compiler (vs2017) para VS;
+Automatizadores de tarefas (Gulp);
+
+
+body{
+	header {  //todo header dentro de body receberá o conjunto
+	
+	}
+	
+	> header { //todo header filho de body receberá o conjunto
+	}
+	
+	&.body-red{ //se body tiver uma classe body-red, qualquer objeto que tenha um body-red dentro de body
+	}
+}
+
+mixins - blocos de códigos pre-definidos pelo desenvolvedor para serem reaproveitados
+
+css-tricks.com

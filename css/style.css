@@ -29,4 +29,74 @@ body > header nav div.navbrand img {
 
 body > header nav ul {
   float: right;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+body > header nav li {
+  padding: 15px;
+  transition: all 400ms ease-in-out;
+}
+
+body > header nav li:hover {
+  background: #9ca2a7;
+}
+
+body > header nav li a {
+  color: #333;
+  text-decoration: none;
+  font-family: "Verdana";
+}
+
+body > section {
+  margin-top: 50px;
+  padding: 20px;
+  display: inline-block;
+  width: calc(100% - 260px);
+}
+
+body > section article {
+  border: solid 1px #9ca2a7;
+  display: inline-block;
+  width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-family: "Arial";
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.175);
+  border-radius: 5px;
+}
+
+body > section article header {
+  position: relative;
+  background: #9ca2a7;
+  padding: 10px;
+}
+
+body > section article h2 {
+  font-size: 16px;
+}
+
+body > section article p {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+body > section article > p {
+  padding: 10px;
+  text-align: justify;
+  font-size: 13px;
+}
+
+body > aside {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  padding: 10px;
+  font-family: "Arial";
+  background: #edeeef;
+  height: calc(100vh - 70px);
+  width: 220px;
 }

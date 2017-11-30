@@ -3,6 +3,7 @@ $cor-2: rgb(255, 0, 0);
 $cor-3: red;
 //
 $font-name: 'Arial';
+$font-name-1: 'Verdana';
 $font-size: 15px;
 //
 $round: 3;
@@ -10,3 +11,4 @@ $round: 3;
 $color-names: "vermelho" "azul" "verde" "amarelo";
 $color-values: red blue green yellow;
 $cinza: #edeeef;
+$cinza-1: darken($cinza, 30%);

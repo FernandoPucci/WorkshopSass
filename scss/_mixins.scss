@@ -9,3 +9,11 @@
 @mixin box-shadow(){
     box-shadow: 2px 2px 12px transparentize($color: #000000, $amount: 0.825);
 }
+
+@mixin animate($animate){
+    transition: all $animate ease-in-out; 
+}
+
+@mixin rounded(){
+    border-radius: 5px;
+}
