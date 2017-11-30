@@ -55,6 +55,7 @@ body > section {
   padding: 20px;
   display: inline-block;
   width: calc(100% - 260px);
+  height: calc(100vh - 116px);
 }
 
 body > section article {
@@ -99,4 +100,24 @@ body > aside {
   background: #edeeef;
   height: calc(100vh - 70px);
   width: 220px;
+  z-index: -1;
+}
+
+body > aside h2 {
+  color: #02b290;
+}
+
+body > aside p {
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+body > footer {
+  background: #2980b9;
+  color: white;
+  text-align: center;
+  font-family: "Verdana";
+  font-size: 13px;
+  padding: 5px;
 }

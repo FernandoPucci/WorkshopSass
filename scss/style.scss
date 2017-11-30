@@ -51,7 +51,9 @@ body {
         margin-top: 50px;
         padding: 20px;
         display: inline-block;
-        width: calc(100% - 260px); //
+        width: calc(100% - 260px); 
+        
+        height: calc(100vh - 116px);//
         article {
             border: solid 1px $cinza-1;
             display: inline-block;
@@ -91,7 +93,28 @@ body {
         background: $cinza;
         height: calc(100vh - 70px);
         width: 220px;
+        z-index: -1;
+   
+        h2{
+            color: $verde;
+        }
+        p{
+            font-size:  13px;
+            text-align: justify;
+            margin-top: 20px;
+        }
 
-    
+        
     }
+
+    >footer{
+       
+        background: $azul;
+        color: white;
+        text-align: center;
+        font-family: $font-name-1;
+        font-size: 13px;
+        padding: 5px;
+    }
+    
 }
