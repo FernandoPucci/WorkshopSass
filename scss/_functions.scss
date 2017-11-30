@@ -1,0 +1,20 @@
+@function soma ($val1, $val2) {
+    @return $val1+$val2;
+}
+
+@function nome-qualquer($value) {
+    @if($value=="10") {
+        @return 10%;
+    }
+    @else if($value==15) {
+        @return 15%;
+    }
+    @return 90%;
+}
+
+@function inverse-color($color-name) {
+    @if($color-name=="amarelo") {
+        @return #333;
+    }
+    @return white;
+}

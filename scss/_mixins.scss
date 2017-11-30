@@ -1,0 +1,11 @@
+@mixin border-radius(){
+    border-radius:  10 px;
+}
+
+@mixin border-radius-value($value){
+    border-radius: $value;
+}
+
+@mixin box-shadow(){
+    box-shadow: 2px 2px 12px transparentize($color: #000000, $amount: 0.825);
+}

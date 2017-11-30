@@ -1,0 +1,71 @@
+@import "_functions.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+body {
+    header {
+        //todo header dentro de body receberá o conjunto
+        color: $cor-1; //height: calc(100% - #{soma(10,15)});
+        width: nome-qualquer("10");
+        height: nome-qualquer("15");
+        padding: nome-qualquer("20");
+        input[type=text] {
+            //border-radius: $round;
+            @include border-radius-value($round);
+        }
+        &.input-flat {
+            border-radius: 0;
+        }
+        &[data-tooltip] {
+            background: black;
+            @include border-radius();
+        }
+    } //
+    >header {
+        //todo header filho de body receberá o conjunto
+        background: $cor-2;
+        @extend .classe-mixin;
+        &.#{$font-name} {
+            background: green;
+        }
+    } //
+    &.body-red {
+        //se body tiver uma classe body-red, qualquer objeto que tenha um body-red dentro de body
+        font-family: $font-name;
+    } //
+    fieldset {
+        @for $i from 1 through length($color-names) {
+            $color-name: nth($color-names, $i);
+            $color-value: nth($color-values, $i); // nth a partir de um indice de uma lista valores ela retorna o objeto
+            &.#{$color-name} {
+                background: $color-value;
+                color: inverse-color($color-name);
+            }
+        }
+
+        @each $color-name in $color-names {
+            $i: index($color-names, $color-name);  // index a partir de um objeto ele retona a posicao
+            $color-value: nth($color-names, $i);
+            &.#{$color-name} {
+                background: $color-value;
+                color: inverse-color($color-name);
+            }
+        }
+
+        $i: 1;
+        @while $i <=length($color-names) {
+            $color-name: nth($color-names, $i);
+            $color-value: nth($color-values, $i);
+            &.#{$color-name} {
+                background: $color-value;
+                color: inverse-color($color-name);
+            }
+            $i: $i+1;
+        }
+    }
+}
+
+.classe-mixin {
+    background: transparentize($color: #000000, $amount: 0.4);
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
